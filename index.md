@@ -24,7 +24,7 @@ permalink: /
 + [インストールの前に] (こんなコンセプトで開発されているよ的な。 Introduction)
 + [システム要件](/quickstart_requirement)
 
-### インストール方法
+### インストールガイド
 
 + [インストール方法](/quickstart_install)
 	- [本番環境]
@@ -52,6 +52,8 @@ permalink: /
 + [コマンドラインインターフェイス]
 + [パフォーマンス](/spec_performance)
 + [実験的実装](/spec_experimental)
++ [slack の説明]
++ [開発コミュニティの説明]
 
 ### 本体の仕様
 
@@ -71,7 +73,7 @@ permalink: /
 + [Web API 開発指針](/api_policy)
 + [Web API認証(Authorization)ガイド](/api_authorization)
 
-## デザインカスタマイズ
+## デザインカスタマイズガイド
 
 + [デザインテンプレートの基礎](/design_template)
 + [デザインのフレーム構成](/design_default-frame)
@@ -79,7 +81,7 @@ permalink: /
 + [ブロックの利用](/design_block)
 + [例:GoogleAnalyticsタグの設置](/design_analyticsbloc)
 
-## 本体のカスタマイズ
+## 本体カスタマイズガイド
 
 + [カスタマイズ指針](/customize_policy)
 	- [イベントハンドラ]
@@ -87,7 +89,7 @@ permalink: /
 + [例:会員管理へ項目の追加](/customize_example-adminadd)
 + [例:のしオプション追加]
 
-## プラグイン開発
+## プラグイン開発ガイド
 
 (目次に全部載せる必要ないと思う)
 
@@ -101,7 +103,7 @@ permalink: /
 
 + [オーナーズストアへの公開](http://www.ec-cube.net/plugin/){:target="_blank"}
 
-## Translations
+## Translations Guide
 
 翻訳ガイド
 
@@ -112,14 +114,22 @@ http://docs.sylius.org/en/latest/cookbook/index.html
 
 ## Testing Guide
 
-ユニットテスト、 Codeception の使い方
+- [ユニットテストガイド]
+- [Codeception ガイド]
+- [Travis CI]
+- [AppVeyor]
 
 ## 本体開発に参加する
 
 + [開発作業全体概要](/collaboration_workflow)
+	- [issue のガイドライン]
+	- [Pull Request のガイドライン]
+	- [ブランチの説明]
 + [Gitを用いた開発手順](/collaboration_githubflow)
 + [マイグレーションガイド](/collaboration_migration)
 + [外部Componentの利用](/collaboration_component)
++ [Slack チャンネルについて]
++ [開発コミュニティについて]
 
 ## Supporters
 
