@@ -21,44 +21,55 @@ permalink: /
 
 ## Quick Start
 
++ [インストールの前に] (こんなコンセプトで開発されているよ的な。 Introduction)
 + [システム要件](/quickstart_requirement)
+
+### インストール方法
+
 + [インストール方法](/quickstart_install)
-+ [プロキシサーバの設定](/quickstart_proxy)
-+ [urlからhtmlを無くす手順](/quickstart_remove-html)
-+ [バージョンアップ方法](/quickstart_update)
+	- [本番環境]
+	- [開発環境の構築](/guideline_development)
+		- [Docker コンテナ]
 
-
-## 本体の仕様
-
-+ [ディレクトリ構成](/spec_directory-structure)
+### 設定ガイド
 + 設定ファイル
 	- [設定ファイルの概要](/spec_config)
 	- [doctrine_cacheの設定](/spec_doctrine-cache)
 	- [セッションハンドラの設定](/spec_session-handler)
-+ 機能仕様
-	- [複数配送](/spec_multi-shipping)
-	- [税率設定](/spec_tax)
+	- [ログ出力設定](/guideline_log)
+++ [プロキシサーバの設定](/quickstart_proxy)
+++ [urlからhtmlを無くす手順](/quickstart_remove-html)
+
+### バージョンアップガイド
+
++ [バージョンアップ方法](/quickstart_update)
+
+## 開発ガイド
+
++ [EC-CUBE 3の利用技術](/guideline_architecture)
++ [コーディング規約](/guideline_coding-style)
++ [開発の補助:デバッグ・Tips](/guideline_tips)
++ [コマンドラインインターフェイス]
 + [パフォーマンス](/spec_performance)
 + [実験的実装](/spec_experimental)
+
+### 本体の仕様
+
++ [ディレクトリ構成](/spec_directory-structure)
 + [機能一覧](https://github.com/EC-CUBE/eccube3-doc/blob/master/feature_list.xls){:target="_blank"}
 + [テーブル・ER図](https://github.com/EC-CUBE/eccube3-doc/tree/master/ER-D){:target="_blank"}
 + [結合試験項目書](https://github.com/EC-CUBE/eccube3-doc/tree/master/IntegrationTest){:target="_blank"}
 + [APIリファレンス](/api-specifications/master/index.html){:target="_blank"}
++ 機能仕様
+	- [複数配送](/spec_multi-shipping)
+	- [税率設定](/spec_tax)
 
-## Web API仕様
+
+### Web API仕様
 
 + [Web API β版 プラグインスタートアップガイド](/api_startup-guide)
 + [Web API 開発指針](/api_policy)
 + [Web API認証(Authorization)ガイド](/api_authorization)
-
-## 開発共通ガイドライン
-
-+ [開発環境の構築](/guideline_development)
-+ [コーディング規約](/guideline_coding-style)
-+ [ログ出力設定](/guideline_log)
-+ [開発の補助:デバッグ・Tips](/guideline_tips)
-+ [EC-CUBE 3の利用技術](/guideline_architecture)
-
 
 ## デザインカスタマイズ
 
@@ -68,52 +79,40 @@ permalink: /
 + [ブロックの利用](/design_block)
 + [例:GoogleAnalyticsタグの設置](/design_analyticsbloc)
 
-## プラグインカスタマイズ
+## 本体のカスタマイズ
+
++ [カスタマイズ指針](/customize_policy)
+	- [イベントハンドラ]
+	- [PurchaseFlow]
++ [例:会員管理へ項目の追加](/customize_example-adminadd)
++ [例:のしオプション追加]
+
+## プラグイン開発
+
+(目次に全部載せる必要ないと思う)
 
 + [プラグインの導入方法](/plugin_install)
 + [プラグイン導入時のトラブルシューティング](/plugin_troubleshooting)
 + プラグイン機構の仕様
 	- [プラグイン仕様書](http://downloads.ec-cube.net/src/manual/v3/plugin.pdf){:target="_blank"}
-	- [インストーラーの仕様](/plugin_installer)
-	- [ハンドラによる優先順位の制御仕様](/plugin_handler)
-	- [プラグイン開発用コンソールコマンド](/plugin_console)
-	- [CIを利用したプラグインのテスト](/plugin_test)
-	- [EC-CUBE 3.0.11 の変更と影響](/plugin_update-for3011)
 + プラグインの開発方法
-	- [プラグインジェネレータの利用方法](/plugin_tutorial-generate)
-	- [新規ページの追加](/plugin_tutorial-pageadd)
-	- [利用しないページの削除](/plugin_tutorial-pagedelete)
-	- [フォームの追加、変更](/plugin_tutorial-form)
-	- [プラグイン用テーブルの追加](/plugin_tutorial-table)
-	- [チュートリアル](/plugin_tutorial)
 + [app/console向けプラグイン](/plugin_console-plugin)
 + プラグインベストプラクティス
-	- [プラグインベストプラクティスとは](plugin_bp_about)
-	- [バージョン違いによる動作](plugin_bp_version)
-	- [ディレクトリ構成について](plugin_bp_directory)
-	- [プラグインの設定、定義](plugin_bp_config)
-	- [プラグインマネージャー](plugin_bp_pluginmanager)
-	- [イベント](plugin_bp_event)
-	- [サービスプロバイダー](plugin_bp_serviceprovider)
-	- [コントローラー](plugin_bp_controller)
-	- [フォーム](plugin_bp_form)
-	- [テンプレート](plugin_bp_template)
-	- [リソースファイル、ブロック](plugin_bp_asset)
-	- [マイグレーション](plugin_bp_migration)
-	- [エンティティ、リポジトリ](plugin_bp_db)
-	- [トランザクション](/plugin_update-for3011)
-	- [ログ](/guideline_log)
-	- [セキュリティ](/plugin_bp_security)
-	- [プラグインのテスト](/plugin_test)
-	- [ライセンス](/plugin_bp_license)
-	- [プラグイン注意点](/plugin_bp_badknowhow)
 
 + [オーナーズストアへの公開](http://www.ec-cube.net/plugin/){:target="_blank"}
 
-## コアコードのカスタマイズ
+## Translations
 
-+ [カスタマイズ指針](/customize_policy)
-+ [例:会員管理へ項目の追加](/customize_example-adminadd)
+翻訳ガイド
+
+## Cookbook
+
+こんな感じのやつ
+http://docs.sylius.org/en/latest/cookbook/index.html
+
+## Testing Guide
+
+ユニットテスト、 Codeception の使い方
 
 ## 本体開発に参加する
 
